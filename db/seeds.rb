@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-user1 = User.create! email: "user1@example.com", password: "12345678", first_name: "James", last_name: "Lowrey"
-user2 = User.create! email: "user2@example.com", password: "12345678", first_name: "James", last_name: "Lowrey"
-user3 = User.create! email: "user3@example.com", password: "12345678", first_name: "James", last_name: "Lowrey"
+user1 = User.create! email: "user1@example.com", password: "12345678", password_confirmation:"12345678", first_name: "James", last_name: "Lowrey"
+user2 = User.create! email: "user2@example.com", password: "12345678", password_confirmation:"12345678", first_name: "James", last_name: "Lowrey"
+user3 = User.create! email: "user3@example.com", password: "12345678", password_confirmation:"12345678", first_name: "James", last_name: "Lowrey"
+

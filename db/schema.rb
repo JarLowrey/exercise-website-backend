@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20171031205444) do
 
   create_table "users", force: :cascade do |t|
     t.integer "gender", default: 0
-    t.integer "age"
+    t.date "birthday"
     t.decimal "weight", precision: 4, scale: 1
     t.decimal "height", precision: 4, scale: 2
     t.string "first_name", null: false
@@ -34,9 +34,6 @@ ActiveRecord::Schema.define(version: 20171031205444) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string "unconfirmed_email"
-    t.string "name"
-    t.string "nickname"
-    t.string "image"
     t.string "email"
     t.text "tokens"
     t.datetime "created_at", null: false

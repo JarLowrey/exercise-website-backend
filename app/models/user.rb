@@ -4,4 +4,10 @@ class User < ActiveRecord::Base
           :recoverable, :rememberable, :trackable, :validatable,
           :confirmable, :omniauthable
   include DeviseTokenAuth::Concerns::User
+  
+
+  protected
+  def confirmation_required? #does not require email confirmation - https://github.com/plataformatec/devise/wiki/How-To:-Add-:confirmable-to-Users
+    false
+  end
 end

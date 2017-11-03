@@ -3,7 +3,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[5.1]
     create_table(:users) do |t|
       #personal_details
       t.integer :gender, default: 0
-      t.integer :age
+      t.date :birthday
       t.decimal :weight, precision: 4, scale: 1
       t.decimal :height, precision: 4, scale: 2
       t.string :first_name, null: false
@@ -42,9 +42,6 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[5.1]
       # t.datetime :locked_at
 
       ## User Info
-      t.string :name
-      t.string :nickname
-      t.string :image
       t.string :email
 
       ## Tokens
